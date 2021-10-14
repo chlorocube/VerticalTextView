@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VerticalTextView</string>
+    <string name="button_direction_switch">縦書き横書き切り替えボタン</string>
+    <string name="text_normal">比較用の標準TextViewです。</string>
+    <string name="text_vertical">縦書きです～。\n……そこそこ使用に耐えうる\nのではなかろうか？
+\nフォントによっては\n相性の悪いものがあります。
+\n半角文字には対応していません。</string>
+    <string name="text_vertical_edge">アウトライン縦書きです～。\n……そこそこ使用に耐えうる\nのではなかろうか？
+\nフォントによっては\n相性の悪いものがあります。
+\n半角文字には対応していません。</string>
+</resources>

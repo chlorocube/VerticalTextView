@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_direction_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_direction_switch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f2a0a1"
+        android:padding="12dp"
+        android:fontFamily="@font/nikumaru"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/text_normal"/>
+
+    <jp.co.chlorocube.verticaltext.DirectionTextView
+        android:id="@+id/text_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#38b48b"
+        android:padding="12dp"
+        android:fontFamily="@font/nikumaru"
+        android:layout_gravity="end"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/text_vertical"/>
+
+    <jp.co.chlorocube.verticaltext.EdgeDirectionTextView
+        android:id="@+id/text_vertical_edge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e6b422"
+        android:padding="12dp"
+        android:fontFamily="@font/nikumaru"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/text_vertical_edge"/>
+</LinearLayout>

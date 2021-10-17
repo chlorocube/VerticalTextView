@@ -11,7 +11,7 @@ Screenshot
 ----------
 ![screenshotVTV.png](https://github.com/chlorocube/VerticalTextView/blob/main/screenshot/ScreenshotVTV.png)
 
-使用フォントは「<a href=http://www.fontna.com/blog/1651/>にくまるフォント</a>」さんです。
+使用フォントは、フォントな様の「<a href=http://www.fontna.com/blog/1651/>にくまるフォント</a>」です。
 
 Download
 --------
@@ -63,22 +63,32 @@ xmlでの記述例：
         val textVertical = DirectionTextView(this)
         val textVerticalEdge = EdgeDirectionTextView(this)
 
-        // 縦書きor横書きを切り替える
+        // 縦書きor横書きを切り替える (コードのみ)
         textVertical.switchDirection()
 
-        // 現在縦書きかどうか？
+        // 現在縦書きかどうか？ (コードのみ)
         val isVerticalText = textVertical.isVerticalText()
+
+        // アウトラインの色と幅を設定 (コードのみ)
+        textVerticalEdge.setEdgeColor(Color.RED)
+        textVerticalEdge.setEdgeWidth(9f)
     }
 ```
 
 ライブラリ使用にあたっての注意点
 -------
 
-・ フォントによっては、縦書きTextViewと相性のよろしくないものがあります。<br>
+<ul>
+<li>フォントによっては、縦書きTextViewと相性のよろしくないものがあります。<br>
 (フォントグリフそのものに上下余白が含まれるNoto系や源系など)<br>
-・ フォントによっては、縦書き時、特定の文字の表示位置がおかしいかもしれません。<br>
+</li>
+<li>フォントによっては、縦書きの場合に、特定の文字の表示位置がおかしいかもしれません。<br>
 (「ぁ」「…」など)<br>
-その場合は、<a href=https://github.com/chlorocube/VerticalTextView/blob/main/verticaltext>verticaltextフォルダ</a>ごとコピーしてCharSettingVerticalクラスの中の設定値を調整してご使用ください。
+その場合は、<a href=https://github.com/chlorocube/VerticalTextView/blob/main/verticaltext>verticaltextフォルダ</a>ごとコピーしてCharSettingVerticalクラスの中の位置設定の値を調整してご使用ください。
+</li>
+<li>フォントサイズは小さめ推奨。<br>
+フォントサイズが大きいと、縦書きの場合に、下方向にはみ出してしまう不具合があります。</li>
+</ul>
 
 License
 -------
